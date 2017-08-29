@@ -169,22 +169,93 @@ footer {
   align-items: center;
 }
 
-footer span {
-}
-
 /* -- media queries -- */
 
 @media only screen and (max-width: 960px) {
   .container {
+    width: auto;
+  }
+
+  header .container,
+  .banner .container {
     justify-content: left;
   }
+
    #list .container {
     display: none;
+  }
+
+  .prodbox {
+    width: 47%;
+  }
+
+  #glasses {
+    display: none;
+  }
+
+  footer span {
+    text-align: left;
   }
 }
 
 @media only screen and (min-width: 960px) {
   #mobile .container {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+.banner .text {
+  width: 100%;
+  top: 10rem;
+}
+
+.banner h2 {
+  padding: 1rem auto auto 2rem;
+  font-size: 0.77rem;
+}
+
+.banner h1 {
+  padding: auto auto auto 2rem;
+  font-size: 1rem;
+}
+
+ .banner {
+  height: 15rem;
+}
+
+.prodgrid,
+.info {
+  justify-content: center;
+}
+
+.prodbox,
+.locationBox,
+.hoursBox {
+  width: 90%;
+}
+
+.hoursBox {
+  padding-top: 0.5rem;
+}
+
+.info {
+  display: block;
+  justify-content: center;
+}
+
+  #watch {
+    display: none;
+  }
+
+  .locationBox,
+  .hoursBox {
+    display: block;
+    padding-left: 1.35rem;
+  }
+
+  footer span {
+    text-align: center;
   }
 }
